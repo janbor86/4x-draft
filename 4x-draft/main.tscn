@@ -1,0 +1,14 @@
+[gd_scene load_steps=4 format=3 uid="uid://6enxtka4u0qt"]
+
+[ext_resource type="Script" uid="uid://bugy0rb4o784e" path="res://main.gd" id="1_ig7tw"]
+[ext_resource type="PackedScene" uid="uid://b3nxbvshgoqly" path="res://map/game_map.tscn" id="2_game_map"]
+[ext_resource type="Script" uid="uid://bw7vhkg0u1c1x" path="res://camera_2d.gd" id="3_h2yge"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_ig7tw")
+
+[node name="GameMap" parent="." instance=ExtResource("2_game_map")]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(2, 2)
+script = ExtResource("3_h2yge")
