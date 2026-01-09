@@ -2,9 +2,11 @@ extends PanelContainer
 class_name SelectionInfo
 
 
+const TILE_SIZE = Vector2i(32, 32)
+
 @onready var game_map: GameMap = %GameMap
 @onready var selection_text: Label = %SelectionText
-@onready var selection_pic: TextureRect = %SelectionPic
+@onready var selection_camera: Camera2D = %SelectionCamera
 
 
 func _ready() -> void:
@@ -14,8 +16,8 @@ func _ready() -> void:
 
 func _on_tile_selected(coord: Vector2i) -> void:
 	selection_text.text = "Selected tile: " + str(coord)
-	selection_pic.texture = game_map.get_texture_for(coord)
+	selection_camera.position = TILE_SIZE * coord + TILE_SIZE/2
 
 func _on_no_tile_selected() -> void:
 	selection_text.text = "No tile selected"
-	selection_pic.texture = null
+	selection_camera.position = -TILE_SIZE

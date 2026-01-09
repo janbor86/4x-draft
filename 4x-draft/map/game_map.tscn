@@ -13,6 +13,9 @@ script = ExtResource("2_game_map_script")
 tile_set = ExtResource("1_tileset")
 script = ExtResource("3_0dvof")
 
+[node name="UnitLayer" type="TileMapLayer" parent="."]
+
 [node name="HighlightLayer" type="TileMapLayer" parent="."]
+visibility_layer = 32
 tile_set = ExtResource("4_s8ynm")
 script = ExtResource("4_eg7ip")

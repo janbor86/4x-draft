@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://d3k24e30mk2gx"]
 
 [ext_resource type="Script" uid="uid://cwpx30u6twu4p" path="res://ui/selection_info.gd" id="1_fnn33"]
-[ext_resource type="Texture2D" uid="uid://qltows7u4ox5" path="res://icon.svg" id="2_8hd5t"]
+[ext_resource type="Script" uid="uid://coy2mdy7xp27a" path="res://ui/sub_viewport.gd" id="2_fnn33"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_h2yge"]
 font_size = 13
@@ -40,11 +40,22 @@ theme_override_constants/margin_top = 5
 theme_override_constants/margin_right = 5
 theme_override_constants/margin_bottom = 5
 
-[node name="SelectionPic" type="TextureRect" parent="MarginContainer/HBoxContainer/MarginContainer"]
-unique_name_in_owner = true
+[node name="SelectionViewPort" type="SubViewportContainer" parent="MarginContainer/HBoxContainer/MarginContainer"]
 layout_mode = 2
-texture = ExtResource("2_8hd5t")
-stretch_mode = 2
+
+[node name="SubViewport" type="SubViewport" parent="MarginContainer/HBoxContainer/MarginContainer/SelectionViewPort"]
+handle_input_locally = false
+msaa_2d = 3
+canvas_cull_mask = 4294967263
+size = Vector2i(64, 64)
+render_target_update_mode = 4
+script = ExtResource("2_fnn33")
+
+[node name="SelectionCamera" type="Camera2D" parent="MarginContainer/HBoxContainer/MarginContainer/SelectionViewPort/SubViewport"]
+unique_name_in_owner = true
+position = Vector2(1380, 752)
+offset = Vector2(0, 1)
+zoom = Vector2(2, 2)
 
 [node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/HBoxContainer"]
 layout_mode = 2
