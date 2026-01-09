@@ -2,10 +2,8 @@ extends BaseMapLayer
 class_name TerrainLayer
 
 
-signal tile_selected(coord: Vector2i)
+const GRASS_VARIANT_IDS = [1, 2]
 
 
-func _input(event: InputEvent) -> void:
-	if event is InputEventMouseButton:
-		if event.is_pressed() and event.button_index == MouseButton.MOUSE_BUTTON_LEFT:
-			tile_selected.emit(calculate_tile_coord())
+func set_grass(coord: Vector2i):
+	set_cell_tile(coord, GRASS_VARIANT_IDS.pick_random())

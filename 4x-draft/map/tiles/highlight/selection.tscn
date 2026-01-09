@@ -1,0 +1,14 @@
+[gd_scene load_steps=4 format=3 uid="uid://dj65wa3nad34o"]
+
+[ext_resource type="Shader" uid="uid://cshjfgkw6bih8" path="res://map/tiles/highlight/selection.gdshader" id="1_4dnbv"]
+[ext_resource type="Texture2D" uid="uid://qltows7u4ox5" path="res://icon.svg" id="1_dn0l0"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_lej4g"]
+shader = ExtResource("1_4dnbv")
+shader_parameter/border_width = 0.06
+shader_parameter/pulse_speed = 4.0
+
+[node name="Selection" type="Sprite2D"]
+material = SubResource("ShaderMaterial_lej4g")
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("1_dn0l0")

@@ -1,8 +1,7 @@
 [gd_scene load_steps=2 format=3 uid="uid://dq5yq7gc2ypqr"]
 
-[ext_resource type="Texture2D" uid="uid://qltows7u4ox5" path="res://icon.svg" id="1_o1ndi"]
+[ext_resource type="Texture2D" uid="uid://316dy3grp28h" path="res://map/tiles/terrain/grassland-1.png" id="1_o1ndi"]
 
 [node name="GrassTile" type="Sprite2D"]
 self_modulate = Color(0.043137256, 0.6117647, 0.09019608, 1)
-scale = Vector2(0.25, 0.25)
 texture = ExtResource("1_o1ndi")

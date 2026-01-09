@@ -1,0 +1,16 @@
+[gd_resource type="TileSet" load_steps=5 format=3 uid="uid://c6tm8m5u0dxl"]
+
+[ext_resource type="PackedScene" uid="uid://bvteu8fkm3sr3" path="res://map/tiles/empty_tile.tscn" id="1_u7r3h"]
+[ext_resource type="PackedScene" uid="uid://dq5yq7gc2ypqr" path="res://map/tiles/terrain/grass_tile_1.tscn" id="2_6d7n1"]
+[ext_resource type="PackedScene" uid="uid://we8jyisxheh0" path="res://map/tiles/terrain/grass_tile_2.tscn" id="3_6d7n1"]
+
+[sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_rfek5"]
+resource_name = "terrain_tile_source"
+scenes/0/scene = ExtResource("1_u7r3h")
+scenes/1/scene = ExtResource("2_6d7n1")
+scenes/2/scene = ExtResource("3_6d7n1")
+
+[resource]
+tile_layout = 2
+tile_size = Vector2i(32, 32)
+sources/0 = SubResource("TileSetScenesCollectionSource_rfek5")
