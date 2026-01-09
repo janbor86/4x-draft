@@ -2,6 +2,7 @@ extends TileMapLayer
 class_name BaseMapLayer
 
 const OUT_OF_MAP: Vector2i = Vector2i.MAX
+const EMPTY = 0
 
 var size: Vector2i
 

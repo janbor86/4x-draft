@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://316dy3grp28h"
-path="res://.godot/imported/grassland-1.png-39aefcf390078a11c98681f74ea8296c.ctex"
+uid="uid://voomd285git2"
+path="res://.godot/imported/wandering-tribe.png-6681643be4d1b9c08964b60811664f1a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://map/tiles/terrain/grassland-1.png"
-dest_files=["res://.godot/imported/grassland-1.png-39aefcf390078a11c98681f74ea8296c.ctex"]
+source_file="res://map/layers/unit/wandering-tribe.png"
+dest_files=["res://.godot/imported/wandering-tribe.png-6681643be4d1b9c08964b60811664f1a.ctex"]
 
 [params]
 

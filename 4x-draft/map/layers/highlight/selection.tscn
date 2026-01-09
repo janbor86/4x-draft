@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://dj65wa3nad34o"]
 
-[ext_resource type="Shader" uid="uid://cshjfgkw6bih8" path="res://map/tiles/highlight/selection.gdshader" id="1_4dnbv"]
+[ext_resource type="Shader" uid="uid://cshjfgkw6bih8" path="res://map/layers/highlight/selection.gdshader" id="1_4dnbv"]
 [ext_resource type="Texture2D" uid="uid://qltows7u4ox5" path="res://icon.svg" id="1_dn0l0"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_lej4g"]

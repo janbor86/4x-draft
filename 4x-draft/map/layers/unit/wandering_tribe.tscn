@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://il8snx0sbiov"]
+
+[ext_resource type="Texture2D" uid="uid://voomd285git2" path="res://map/layers/unit/wandering-tribe.png" id="1_8js2s"]
+
+[node name="WanderingTribe" type="Sprite2D"]
+self_modulate = Color(0.40392157, 1, 0.39215687, 1)
+texture = ExtResource("1_8js2s")

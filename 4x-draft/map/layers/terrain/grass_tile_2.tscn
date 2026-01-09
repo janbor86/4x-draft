@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://we8jyisxheh0"]
 
-[ext_resource type="Texture2D" uid="uid://m1pj68xinrht" path="res://map/tiles/terrain/grassland-2.png" id="1_ungra"]
+[ext_resource type="Texture2D" uid="uid://m1pj68xinrht" path="res://map/layers/terrain/grassland-2.png" id="1_ungra"]
 
 [node name="GrassTile" type="Sprite2D"]
 self_modulate = Color(0.043137256, 0.6117647, 0.09019608, 1)

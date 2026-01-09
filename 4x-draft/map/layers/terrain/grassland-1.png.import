@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://m1pj68xinrht"
-path="res://.godot/imported/grassland-2.png-9ac2744598624be4d4f35948ab932c87.ctex"
+uid="uid://316dy3grp28h"
+path="res://.godot/imported/grassland-1.png-448c9484e51f8048496eeb3681726af9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://map/tiles/terrain/grassland-2.png"
-dest_files=["res://.godot/imported/grassland-2.png-9ac2744598624be4d4f35948ab932c87.ctex"]
+source_file="res://map/layers/terrain/grassland-1.png"
+dest_files=["res://.godot/imported/grassland-1.png-448c9484e51f8048496eeb3681726af9.ctex"]
 
 [params]
 

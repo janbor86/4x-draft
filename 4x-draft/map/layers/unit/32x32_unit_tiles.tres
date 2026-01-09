@@ -1,0 +1,15 @@
+[gd_resource type="TileSet" load_steps=5 format=3 uid="uid://dcblb7oc8nm7d"]
+
+[ext_resource type="PackedScene" uid="uid://bvteu8fkm3sr3" path="res://map/layers/empty_tile.tscn" id="1_y5iue"]
+[ext_resource type="PackedScene" uid="uid://il8snx0sbiov" path="res://map/layers/unit/wandering_tribe.tscn" id="2_jd6jb"]
+[ext_resource type="PackedScene" uid="uid://dyj6wskp2fnrs" path="res://map/layers/unit/small_tribe.tscn" id="3_gu33s"]
+
+[sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_vvqu8"]
+resource_name = "unit_tile_source"
+scenes/0/scene = ExtResource("1_y5iue")
+scenes/1/scene = ExtResource("2_jd6jb")
+scenes/3/scene = ExtResource("3_gu33s")
+
+[resource]
+tile_size = Vector2i(32, 32)
+sources/0 = SubResource("TileSetScenesCollectionSource_vvqu8")

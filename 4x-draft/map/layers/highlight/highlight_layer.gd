@@ -2,7 +2,6 @@ extends BaseMapLayer
 class_name HighlightLayer
 
 
-const EMPTY = 0
 const HIGHLIGHT = 1
 const SELECTION = 2
 

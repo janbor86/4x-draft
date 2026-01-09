@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://dyj6wskp2fnrs"]
+
+[ext_resource type="Texture2D" uid="uid://decosreofkvnf" path="res://map/layers/unit/small-tribe.png" id="1_svadk"]
+
+[node name="SmallTribe" type="Sprite2D"]
+texture = ExtResource("1_svadk")

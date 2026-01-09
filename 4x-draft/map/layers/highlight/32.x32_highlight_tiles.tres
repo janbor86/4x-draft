@@ -1,8 +1,8 @@
 [gd_resource type="TileSet" load_steps=5 format=3 uid="uid://sadruipgsrya"]
 
-[ext_resource type="PackedScene" uid="uid://cx3x8t7fjthrp" path="res://map/tiles/highlight/highlight.tscn" id="1_fkane"]
-[ext_resource type="PackedScene" uid="uid://bvteu8fkm3sr3" path="res://map/tiles/empty_tile.tscn" id="1_mkgb0"]
-[ext_resource type="PackedScene" uid="uid://dj65wa3nad34o" path="res://map/tiles/highlight/selection.tscn" id="2_mkgb0"]
+[ext_resource type="PackedScene" uid="uid://cx3x8t7fjthrp" path="res://map/layers/highlight/highlight.tscn" id="1_fkane"]
+[ext_resource type="PackedScene" uid="uid://bvteu8fkm3sr3" path="res://map/layers/empty_tile.tscn" id="1_mkgb0"]
+[ext_resource type="PackedScene" uid="uid://dj65wa3nad34o" path="res://map/layers/highlight/selection.tscn" id="2_mkgb0"]
 
 [sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_dxmk1"]
 resource_name = "highlight_tile_source"
