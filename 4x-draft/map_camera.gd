@@ -46,6 +46,7 @@ func _process(delta):
 		if Input.is_action_pressed(action):
 			position += scroll_speed * delta * scroll_map[action]
 	zoom_level += snappedf((target - zoom_level) * delta * zoom_speed, 0.0001)
+	_handle_input(delta)
 			
 	
 func _input(event):
@@ -66,7 +67,20 @@ func _input(event):
 		"InputEventMouseMotion":
 			if dragging:
 				position -= event.relative / zoom
-		
+				
+func _handle_input(delta: float) -> void:
+	# Pan camera with arrow keys or WASD (frame-rate independent)
+	var pan_speed = 400.0 * delta
+	if Input.is_action_pressed("ui_up"):
+		global_position.y -= pan_speed
+	if Input.is_action_pressed("ui_down"):
+		global_position.y += pan_speed
+	if Input.is_action_pressed("ui_left"):
+		global_position.x -= pan_speed
+	if Input.is_action_pressed("ui_right"):
+		global_position.x += pan_speed
+				
+				
 func update_zoom():
 	zoom_level_changed.emit(zoom_level)
 	zoom = zoom_level * Vector2.ONE

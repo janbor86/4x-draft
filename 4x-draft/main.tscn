@@ -6,13 +6,12 @@
 [ext_resource type="PackedScene" uid="uid://d3k24e30mk2gx" path="res://ui/selection_info.tscn" id="4_1bvp3"]
 
 [node name="Main" type="Node2D"]
-position = Vector2(0, 1)
 script = ExtResource("1_ig7tw")
 
 [node name="GameMap" parent="." instance=ExtResource("2_game_map")]
 unique_name_in_owner = true
 
-[node name="Camera2D" type="Camera2D" parent="."]
+[node name="MapCamera" type="Camera2D" parent="."]
 unique_name_in_owner = true
 zoom = Vector2(2, 2)
 script = ExtResource("3_h2yge")
